@@ -1,8 +1,8 @@
 # DOCKER CUSTOM PHP-FPM IMAGE
-Custom `PHP` image with basic `PHP` extensions and custom `PHP` configurations `php.ini`
+Custom `PHP-FPM` image with basic `PHP` extensions and custom `PHP` configurations `php.ini`
 
 ## Versions of Base Images
- * `php:7.3-fpm` customised see `dockerfile` for more details
+ * `php:7.3-fpm` customised see [dockerfile] for more details
 
 ## Installation or Download
 ```
@@ -104,6 +104,6 @@ $ docker exec -it phpfpm bash
 ```
 [docker-php-extension-installer]: https://github.com/mlocati/docker-php-extension-installer
 [custom_php.ini]: customPHPConf/custom_php.ini
-[dockerfile]:dockerfile
+[dockerfile]:DockerFile
 [mysite.conf]:nginxConf/mysite.conf
 [customPHPConf]: customPHPConf
