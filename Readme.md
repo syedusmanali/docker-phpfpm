@@ -1,4 +1,4 @@
-# DOCKER CUSTOM PHP IMAGE
+# DOCKER CUSTOM PHP-FPM IMAGE
 Custom `PHP` image with basic `PHP` extensions and custom `PHP` configurations `php.ini`
 
 ## Versions of Base Images
