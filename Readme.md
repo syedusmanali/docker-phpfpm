@@ -13,7 +13,12 @@ $ git clone https://github.com/syedusmanali/docker-phpfpm.git
 * PHP image can be modified as required eg installation of PHP extensions which can be specified in [dockerfile]. 
 See [docker-php-extension-installer] for more details on PHP extensions.
 * PHP custom configurations can be provided in [custom_php.ini] or as a separate file inside the [customPHPConf] folder.
- 
+
+## PreBuild image
+Pre build image can be downloaded as well if no changes are required in the image see [syedusmanali/php-fpm] for further info.
+```
+docker pull syedusmanali/php-fpm
+``` 
 ## Building the image
 Inside the terminal window go to the base folder of dockerfile by running
 
@@ -107,3 +112,4 @@ $ docker exec -it phpfpm bash
 [dockerfile]:DockerFile
 [mysite.conf]:nginxConf/mysite.conf
 [customPHPConf]: customPHPConf
+[syedusmanali/php-fpm]: https://hub.docker.com/r/syedusmanali/php-fpm
