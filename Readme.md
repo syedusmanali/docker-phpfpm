@@ -1,8 +1,8 @@
 # DOCKER CUSTOM PHP-FPM IMAGE
 Custom `PHP-FPM` image with basic `PHP` extensions and custom `PHP` configurations `php.ini`
 
-## Versions of Base Images
- * `php:7.3-fpm` customised see [dockerfile] for more details
+## Version of Base Image
+ * `php:7.3-fpm` customized see [dockerfile] for more details
 
 ## Installation or Download
 ```
