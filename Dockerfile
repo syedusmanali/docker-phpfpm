@@ -1,4 +1,4 @@
-FROM php:7.3-fpm
+FROM php:8.1-fpm
 
 # check https://github.com/mlocati/docker-php-extension-installer for other extensions
 RUN apt-get update

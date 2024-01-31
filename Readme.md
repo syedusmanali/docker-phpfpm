@@ -2,7 +2,7 @@
 Custom `PHP-FPM` image with basic `PHP` extensions and custom `PHP` configurations `php.ini`
 
 ## Version of Base Image
- * `php:7.3-fpm` customized see [dockerfile] for more details
+ * `php:8.1-fpm` customized see [dockerfile] for more details
 
 ## Installation or Download
 ```
@@ -27,9 +27,12 @@ $ cd [basepath]/docker-phpfpm
 ```
 And to create the image Run 
 ```
-$ docker build -t syedusmanali/php-fpm .
+$ docker build .
+```
+or with docker repository tag/tags
+```
+$ docker build -t syedusmanali/php-fpm -t syedusmanali/php-fpm:8.1 .
 ``` 
-
 
 ## Running Container
 We will use PHP-FPM with NGINX to serve our PHP app. Doing so will allow us to setup more complex configuration, serve static assets using NGINX.
