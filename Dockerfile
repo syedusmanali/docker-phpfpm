@@ -8,13 +8,11 @@ RUN apt-get update && apt-get install -y \
         # additional packages if needed
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
-# Switch to the new user
-USER appuser
-
 ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/master/install-php-extensions /usr/local/bin/
 RUN chmod uga+x /usr/local/bin/install-php-extensions && sync && \
     install-php-extensions mysqli gd ssh2 zip imagick exif
+# Switch to the new user
+USER appuser
 
 ADD customPHPConf/  /usr/local/etc/php/conf.d/
 
